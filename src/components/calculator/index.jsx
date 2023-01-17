@@ -1,7 +1,10 @@
-import { SectionStyled, DivForm, DivResults } from "./style";
+import { SectionStyled, DivForm} from "./style";
 import { formSchema } from "../../validators/addValue";
 import {yupResolver} from "@hookform/resolvers/yup";
 import {useForm} from "react-hook-form";
+import { useContext } from "react";
+import { ValueContext } from "../../contexts/ValueContext";
+import { Info } from "../Info";
 
 
 export const Calculator = () => {
@@ -10,12 +13,14 @@ export const Calculator = () => {
         resolver: yupResolver(formSchema),
     });
 
+    const {calculateAnticipation} = useContext(ValueContext);
+
     return(
         <SectionStyled className="container">
             <DivForm className="div-form">
                 <h2>Simule a sua antecipação</h2>
 
-                <form onSubmit={handleSubmit()}>
+                <form onSubmit={handleSubmit(calculateAnticipation)}>
                     <label htmlFor="">Informe o valor da renda *</label>
                     <input type="text" {...register("amount")} />
                     {errors.amount ? ( <span className="error">{errors.amount.message}</span>) : null}
@@ -32,17 +37,7 @@ export const Calculator = () => {
                     <button>Calcular</button>
                 </form>
             </DivForm>
-
-            <DivResults className="div-results">
-                <h3>Você receberá</h3>
-                <ul>
-                    <li>Amanhã: R$</li>
-                    <li>Em 15 dias: R$</li>
-                    <li>Em 30 dias: R$</li>
-                    <li>Em 90 dias: R$</li>
-                </ul>
-            </DivResults>
-
+            <Info/>
         </SectionStyled>
     );
 }

@@ -29,8 +29,9 @@ export const DivForm = styled.div`
     align-items: flex-start;
     justify-content: center;
     gap: 1.5rem;
-    background-color: #FFFFFF;
+    background-color: var(--color-background);
     padding-left: 1.5rem;
+    border-radius: 4px;
 
     form{
         display: flex;
@@ -58,8 +59,7 @@ export const DivForm = styled.div`
         border: 1px solid var(--color-gray);
         border-radius: 4px;
         width: 100%;
-        height: 1.5rem;
-        outline: 0;
+        height: 1.8rem;
         padding-left: 0.5rem;
 
         font-family: 'Source Sans Pro', sans-serif;
@@ -67,6 +67,11 @@ export const DivForm = styled.div`
         font-weight: 400;
         color: var(--color-title);
 
+    }
+
+    input:focus {
+        outline: 0;
+        border-color:  var(--color-blue-light);
     }
 
     span{
@@ -111,40 +116,5 @@ export const DivForm = styled.div`
         color: rgb(255, 255, 255, .7);
         }
 
-
-`;
-
-export const DivResults = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 2rem;
-    background-color: rgba(209, 220, 227, 0.48);
-
-    h3{
-        font-family: 'Source Sans Pro', sans-serif;
-        font-style: italic;
-        font-weight: 700;
-        font-size: 1.5rem;
-        color: var(--color-blue-strong);
-        border-bottom: 1px solid var(--color-blue-light);
-        
-    }
-
-    ul{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-between;
-        gap: 1.5rem;
-    }
-
-    li{
-        font-family: 'Source Sans Pro', sans-serif;
-        font-style: italic;
-        font-weight: 400;
-        font-size: 1.2rem;
-        color: var(--color-blue-strong);
-    }
 
 `;
