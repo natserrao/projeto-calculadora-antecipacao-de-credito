@@ -7,10 +7,10 @@ import { ValueProviders } from './contexts/ValueContext';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ValueProviders>
-      <GlobalStyle/>
-      <App />
-    </ValueProviders>
+      <ValueProviders>
+          <GlobalStyle/>
+          <App />
+      </ValueProviders>
   </React.StrictMode>
 );
 

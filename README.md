@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Calculadora de Antecipação de Recebíveis
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Desenvolvimento: Saber quanto custa antecipar uma transação,e para isso, foi desenvolvida uma calculadora de antecipação para saber quais valores receberão caso optem por antecipar o recebimento.
 
 ## Available Scripts
 
