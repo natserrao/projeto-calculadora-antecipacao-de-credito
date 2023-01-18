@@ -38,9 +38,9 @@ export const Form = () => {
 
                 </form>
                 <div className="div-botoes">
-                    <button  id="botao-timeout">Timeout</button>
-                    <button  id="botao-delay">Delay</button>
-                    <button  id="botao-internal">Internal</button>
+                    <button id="botao-timeout">Timeout</button>
+                    <button id="botao-delay">Delay</button>
+                    <button id="botao-internal">Internal</button>
                 </div>
 
             </DivForm>
