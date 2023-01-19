@@ -26,7 +26,7 @@ export const DivForm = styled.div`
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-around;
-        gap: 0.6rem;
+        gap: 0.69rem;
 
     }
 
@@ -96,14 +96,22 @@ export const DivForm = styled.div`
     }
 
     button{
-        border: 0;
+            border: 0;
             border-radius: 100px;
             box-sizing: border-box;
             color: #ffffff;
             cursor: pointer;
             height: 6vh;
             background-color: var(--color-blue-strong);
-            width: 100%;
+            width: 80%;
+            margin: 0 auto;
+            transition: 0.4s;
+    }
+
+    button:hover{
+        background-color: var(--color-title);
+        transition: 0.4s;
+
     }
     .div-botoes{
         display: flex;
