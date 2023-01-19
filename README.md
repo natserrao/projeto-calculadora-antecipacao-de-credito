@@ -1,70 +1,40 @@
-# Calculadora de Antecipação de Recebíveis
+# ➕ Calculadora de Antecipação de Recebíveis ➕
 
-Desenvolvimento: Saber quanto custa antecipar uma transação,e para isso, foi desenvolvida uma calculadora de antecipação para saber quais valores receberão caso optem por antecipar o recebimento.
+Hoje em dia é muito comum antecipar uma transação. Por isso, a calculadora foi desenvolvida para saber quais valores os clientes receberão caso optem por antecipar uma transação.
 
-## Available Scripts
+### `Simulando uma antecipação`
 
-In the project directory, you can run:
+Para a simulação, é preciso enviar alguns dados:
+
+```
+{
+    "amount": 15000,
+    "installments": 3,
+    "mdr": 4
+}
+```
+ou os dados poderão ser enviados nesse formato:
+```
+{
+    "amount": 15000,
+    "installments": 3,
+    "mdr": 4,
+    "days": [30,60,90]
+}
+```
+O amount (number) é o valor da transação em centavos. O installments (number) é o número de parcelas. O mdr (number) é a taxa cobrada pelas adquirentes sobre cada transação de cartão de crédito e débito. Days é um dado opcional (Array) que pode ser configurável, retornando os valores com os dias especificados.
 
 ### `yarn start`
+Para rodar a aplicação no modo de desenvolvimento:
+Abrir no endereço [http://localhost:3000](http://localhost:3000) para visualização.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### `Deploy`
+Para rodar a aplicação com deploy:
+https://calculadora-antecipacao-credito-d19732dm4-natserrao.vercel.app/
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

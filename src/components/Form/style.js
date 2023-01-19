@@ -13,6 +13,13 @@ export const DivForm = styled.div`
     padding-left: 1.5rem;
     border-radius: 4px;
 
+    @media (min-width: 320px) and (max-width: 480px) {
+        width:100%;
+        flex-direction: column;
+        padding: 1rem;
+        align-items: center;
+    }
+
     form{
         width: 80%;
         display: flex;
@@ -20,6 +27,7 @@ export const DivForm = styled.div`
         align-items: flex-start;
         justify-content: space-around;
         gap: 0.6rem;
+
     }
 
     h2 {
@@ -27,6 +35,11 @@ export const DivForm = styled.div`
             font-size: 1.5rem;
             font-weight: 700;
             color: var(--color-title);
+
+            @media (min-width: 320px) and (max-width: 480px) {
+            text-align: center;
+    }
+
         }
 
     label {
