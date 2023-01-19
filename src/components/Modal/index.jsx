@@ -1,9 +1,9 @@
 import { useContext } from "react";
 import { ModalContext } from "../../contexts/ModalContext";
 import {ModalDelay} from "./ModalDelay";
-import ModalInternalError from "./ModalInternalError";
-import ModalTimeOut from "./ModalTimeOut";
-import { ModalWrapper } from "./style";
+import { ModalInternalError} from "./ModalInternalError";
+import { ModalTimeOut } from "./ModalTimeOut";
+import { Container } from "./style";
 
 function Modal() {
   const { modal} = useContext(ModalContext);
@@ -12,19 +12,19 @@ function Modal() {
   return (
     <>
       {modal.delay && modal.openModal ? (
-        <ModalWrapper>
+        <Container>
           <ModalDelay />
-        </ModalWrapper>
+        </Container>
 
       ) : modal.timeout && modal.openModal ? (
-        <ModalWrapper>
+        <Container>
           <ModalTimeOut/>
-        </ModalWrapper>
+        </Container>
         
       ) : modal.internalError && modal.openModal ? (
-        <ModalWrapper>
+        <Container>
           <ModalInternalError />
-        </ModalWrapper>
+        </Container>
       ) : null}
     </>
   );

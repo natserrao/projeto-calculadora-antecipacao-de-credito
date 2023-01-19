@@ -6,5 +6,4 @@ export const ModalInternalError = () => {
         <h1>Internal Error</h1>
       </ModalError>
   )
-}
-export default ModalInternalError
+};
