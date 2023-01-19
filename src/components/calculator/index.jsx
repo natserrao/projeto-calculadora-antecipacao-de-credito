@@ -9,6 +9,7 @@ export const Calculator = () => {
         <SectionStyled className="container">
             <Form/>
             <Info/>
+           
         </SectionStyled>
     );
 }

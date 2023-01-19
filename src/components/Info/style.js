@@ -26,14 +26,6 @@ export const DivResults = styled.div`
         color: var(--color-blue-strong);
         border-bottom: 1px solid var(--color-blue-light);
     }
-
-    /* div{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-between;
-        gap: 2rem;
-    } */
     p{
         font-family: 'Source Sans Pro', sans-serif;
         font-style: italic;

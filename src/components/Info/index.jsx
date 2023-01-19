@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { ValueContext } from "../../contexts/ValueContext";
+import Modal from "../Modal";
 import { DivResults } from "./style";
 
 export const Info = () =>{
@@ -11,7 +12,8 @@ export const Info = () =>{
         period = Object.entries(antecipation)
     }
     return (
-    <DivResults>
+      <>
+      <DivResults>
         <h3>Você receberá</h3>
     <>
       {
@@ -33,6 +35,9 @@ export const Info = () =>{
         </>
       )}
     </>
+    <Modal/>
     </DivResults>
+    
+    </>
     )
 }
