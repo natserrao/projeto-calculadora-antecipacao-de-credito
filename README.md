@@ -32,7 +32,7 @@ Abrir no endereço [http://localhost:3000](http://localhost:3000) para visualiza
 
 ### `Deploy`
 Para rodar a aplicação com deploy:
-https://calculadora-antecipacao-credito-d19732dm4-natserrao.vercel.app/
+https://calculadora-antecipacao-credito.vercel.app/
 
 
 
